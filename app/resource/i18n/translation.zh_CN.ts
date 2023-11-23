@@ -104,6 +104,39 @@
     </message>
 </context>
 <context>
+    <name>SecretFileInterface</name>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="97"/>
+        <source>Secret File</source>
+        <translation>文件加密器</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="98"/>
+        <source>File:</source>
+        <translation>文件：</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="99"/>
+        <source>open file</source>
+        <translation>打开文件</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="100"/>
+        <source>Password:</source>
+        <translation>密码：</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="101"/>
+        <source>Encode</source>
+        <translation>加密</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_secret_file_interface.py" line="102"/>
+        <source>Decode</source>
+        <translation>解密</translation>
+    </message>
+</context>
+<context>
     <name>SettingInterface</name>
     <message>
         <location filename="../../view/setting_interface.py" line="28"/>
@@ -184,6 +217,57 @@
         <location filename="../../view/setting_interface.py" line="82"/>
         <source>Setting</source>
         <translation>设置</translation>
+    </message>
+</context>
+<context>
+    <name>SingleTaskWidget</name>
+    <message>
+        <location filename="../../applications/SecretFile/ui_single_task_widget.py" line="74"/>
+        <source>pause</source>
+        <translation>暂停任务</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="75"/>
+        <source>continue</source>
+        <translation>继续任务</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/ui_single_task_widget.py" line="75"/>
+        <source>remove</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
+    <name>Translator</name>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="14"/>
+        <source>encoding...</source>
+        <translation>加密中...</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="15"/>
+        <source>decoding...</source>
+        <translation>解密中...</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="16"/>
+        <source>finished</source>
+        <translation>已完成</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="17"/>
+        <source>wrong password</source>
+        <translation>密码错误</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="18"/>
+        <source>file already exists</source>
+        <translation>文件已存在</translation>
+    </message>
+    <message>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="19"/>
+        <source>file is broken</source>
+        <translation>文件已损坏</translation>
     </message>
 </context>
 </TS>

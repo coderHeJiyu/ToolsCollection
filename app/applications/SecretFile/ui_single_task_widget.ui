@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SingleTaskWidget</class>
+ <widget class="QWidget" name="SingleTaskWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>77</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>华文行楷</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,0,2,0,1,1">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="CaptionLabel" name="label_src">
+       <property name="text">
+        <string notr="true">Caption label</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="ProgressBar" name="progressBar">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="StrongBodyLabel" name="label_state">
+     <property name="text">
+      <string notr="true">Strong body label</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="ToolButton" name="pushButton">
+     <property name="toolTip">
+      <string>pause</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="ToolButton" name="pushButton_2">
+     <property name="toolTip">
+      <string>remove</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>StrongBodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ProgressBar</class>
+   <extends>QProgressBar</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SingleTaskWidget</receiver>
+   <slot>pause_toggled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>526</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>SingleTaskWidget</receiver>
+   <slot>remove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>570</x>
+     <y>8</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pause_toggled()</slot>
+  <slot>remove()</slot>
+ </slots>
+</ui>
