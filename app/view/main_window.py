@@ -1,6 +1,6 @@
 from qfluentwidgets import NavigationItemPosition, FluentIcon
 from app.view.main_window_base import MainWindowBase
-from app.view import DemoInterface
+from app.view import DemoInterface, FileTreeInterface
 
 
 class MainWindow(MainWindowBase):
@@ -9,6 +9,7 @@ class MainWindow(MainWindowBase):
         self.setWindowTitle(self.tr("Tools Collection"))
         self.theme_button.setToolTip(self.tr("Toggle theme"))
         self.demo_interface = DemoInterface(self)
+        self.file_tree_interface = FileTreeInterface(self)
         self.__init_navigation()
         self.splash_screen.finish()
 
@@ -18,5 +19,11 @@ class MainWindow(MainWindowBase):
             self.demo_interface,
             FluentIcon.TAG,
             self.demo_interface.windowTitle(),
+            pos,
+        )
+        self.addSubInterface(
+            self.file_tree_interface,
+            FluentIcon.BOOK_SHELF,
+            self.file_tree_interface.windowTitle(),
             pos,
         )
