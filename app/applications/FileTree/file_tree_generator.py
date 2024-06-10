@@ -1,6 +1,22 @@
 import os
 
 
+def file_sort_key(name: str, path: str):
+    """文件排序key"""
+    if os.path.isdir(os.path.join(path, name)):
+        return (0, name)
+    _name_split = name.split(".")
+    if len(_name_split) == 1:
+        return (1, name)
+    _suffix = _name_split[-1]
+    name = ".".join(_name_split[:-1])
+    return (
+        2,
+        _suffix,
+        name,
+    )
+
+
 class FileTreeGenerator:
     """目录树生成器"""
 
@@ -139,6 +155,7 @@ class FileTreeGenerator:
         # 合并
         for _, value in zip_dict.items():
             result_list.extend(value)
+        result_list.sort(key=lambda x: file_sort_key(x, path))
         return result_list
 
     def __generate_file_tree(self, path: str, depth: int):
