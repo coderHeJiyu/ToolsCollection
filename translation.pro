@@ -12,5 +12,7 @@ SOURCES += app/view/main_window.py \
         app/applications/SecretFile/single_task_widget.py \
         app/applications/SecretFile/ui_single_task_widget.py \
         app/applications/SecretFile/secret_file_treads.py \
+        app/applications/EZVideoEditor/ez_video_editor_interface.py \
+        app/applications/EZVideoEditor/ui_ez_video_editor_interface.py \
 
 TRANSLATIONS += app/resource/i18n/translation.zh_CN.ts \

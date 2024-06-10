@@ -10,6 +10,84 @@
     </message>
 </context>
 <context>
+    <name>EZVideoEditorInterface</name>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="140"/>
+        <source>EZ Video Editor</source>
+        <translation>简洁视频编辑器</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="151"/>
+        <source>00:00:00:000</source>
+        <translation>00:00:00:000</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="143"/>
+        <source>previous second</source>
+        <translation>上一秒</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="144"/>
+        <source>previous frame</source>
+        <translation>上一帧</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="145"/>
+        <source>play/pause</source>
+        <translation>播放/暂停</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="146"/>
+        <source>next frame</source>
+        <translation>下一帧</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="147"/>
+        <source>next second</source>
+        <translation>下一秒</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="148"/>
+        <source>record the start time</source>
+        <translation>记录开始时间</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="150"/>
+        <source>record the end time</source>
+        <translation>记录结束时间</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="152"/>
+        <source>save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="217"/>
+        <source>error</source>
+        <translation>出错了</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="156"/>
+        <source>Drop a video file first!</source>
+        <translation>请先拖放一个视频文件！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="201"/>
+        <source>The video clip already exists!</source>
+        <translation>该视频片段已存在！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="228"/>
+        <source>success</source>
+        <translation>已完成</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="228"/>
+        <source>Video clip saved successfully!</source>
+        <translation>视频片段已经成功保存！</translation>
+    </message>
+</context>
+<context>
     <name>FileTreeInterface</name>
     <message>
         <location filename="../../applications/FileTree/file_tree_interface.py" line="70"/>
@@ -227,7 +305,7 @@
         <translation>暂停任务</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="75"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="73"/>
         <source>continue</source>
         <translation>继续任务</translation>
     </message>
@@ -240,32 +318,32 @@
 <context>
     <name>Translator</name>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="14"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="12"/>
         <source>encoding...</source>
         <translation>加密中...</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="15"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="13"/>
         <source>decoding...</source>
         <translation>解密中...</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="16"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="14"/>
         <source>finished</source>
         <translation>已完成</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="17"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="15"/>
         <source>wrong password</source>
         <translation>密码错误</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="18"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="16"/>
         <source>file already exists</source>
         <translation>文件已存在</translation>
     </message>
     <message>
-        <location filename="../../applications/SecretFile/single_task_widget.py" line="19"/>
+        <location filename="../../applications/SecretFile/single_task_widget.py" line="17"/>
         <source>file is broken</source>
         <translation>文件已损坏</translation>
     </message>
