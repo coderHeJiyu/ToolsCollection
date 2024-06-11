@@ -12,79 +12,114 @@
 <context>
     <name>EZVideoEditorInterface</name>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="140"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="156"/>
         <source>EZ Video Editor</source>
         <translation>简洁视频编辑器</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="151"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="167"/>
         <source>00:00:00:000</source>
         <translation>00:00:00:000</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="143"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="159"/>
         <source>previous second</source>
         <translation>上一秒</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="144"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="160"/>
         <source>previous frame</source>
         <translation>上一帧</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="145"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="161"/>
         <source>play/pause</source>
         <translation>播放/暂停</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="146"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="162"/>
         <source>next frame</source>
         <translation>下一帧</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="147"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="163"/>
         <source>next second</source>
         <translation>下一秒</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="148"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="164"/>
         <source>record the start time</source>
         <translation>记录开始时间</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="150"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="166"/>
         <source>record the end time</source>
         <translation>记录结束时间</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="152"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="168"/>
         <source>save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="217"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="235"/>
         <source>error</source>
         <translation>出错了</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="156"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="158"/>
         <source>Drop a video file first!</source>
         <translation>请先拖放一个视频文件！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="201"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="218"/>
         <source>The video clip already exists!</source>
         <translation>该视频片段已存在！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="228"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="245"/>
         <source>success</source>
         <translation>已完成</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="228"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="245"/>
         <source>Video clip saved successfully!</source>
         <translation>视频片段已经成功保存！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="170"/>
+        <source>vlc</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="171"/>
+        <source>and</source>
+        <translation>和</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="172"/>
+        <source>ffmpeg</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="169"/>
+        <source>Make sure</source>
+        <translation>确保</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="173"/>
+        <source>are installed.</source>
+        <translation>已经安装。</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="178"/>
+        <source>Start time set successfully!</source>
+        <translation>成功设置开始时间！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="196"/>
+        <source>End time set successfully!</source>
+        <translation>成功设置结束时间！</translation>
     </message>
 </context>
 <context>

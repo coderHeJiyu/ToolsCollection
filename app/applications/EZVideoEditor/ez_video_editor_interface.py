@@ -3,7 +3,7 @@ from typing import Optional
 import ffmpeg
 from vlc import MediaPlayer
 from PyQt5.QtWidgets import QWidget, QFileDialog
-from PyQt5.QtCore import QTimer, QTime, QUrl, Qt
+from PyQt5.QtCore import QTimer, QTime, QUrl
 from qfluentwidgets import FluentIcon, InfoBar, InfoBarPosition
 from ui_ez_video_editor_interface import Ui_EZVideoEditorInterface
 
@@ -46,6 +46,8 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         self.button_set_start.setIcon(FluentIcon.STOP_WATCH)
         self.button_set_end.setIcon(FluentIcon.STOP_WATCH)
         self.button_cut.setIcon(FluentIcon.CUT)
+        self.hyperlink_ffmpeg.setIcon(FluentIcon.LINK)
+        self.hyperlink_vlc.setIcon(FluentIcon.LINK)
         # 视频信息
         self.video_info = {
             "start_time": 0,
@@ -156,7 +158,6 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
             InfoBar.error(
                 title=self.tr("error"),
                 content=self.tr("Drop a video file first!"),
-                orient=Qt.Horizontal,
                 isClosable=False,
                 position=InfoBarPosition.BOTTOM_LEFT,
                 duration=2000,
@@ -174,6 +175,14 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         _time = self.player.get_time()
         self.video_info["start_time"] = _time
         self.start_time_label.setText(ms2str(_time))
+        InfoBar.success(
+            title=self.tr("success"),
+            content=self.tr("Start time set successfully!"),
+            isClosable=False,
+            position=InfoBarPosition.BOTTOM_RIGHT,
+            duration=2000,
+            parent=self,
+        )
 
     def set_end_time(self):
         """
@@ -184,6 +193,14 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         _time = self.player.get_time()
         self.video_info["end_time"] = _time
         self.end_time_label.setText(ms2str(_time))
+        InfoBar.success(
+            title=self.tr("success"),
+            content=self.tr("End time set successfully!"),
+            isClosable=False,
+            position=InfoBarPosition.BOTTOM_RIGHT,
+            duration=2000,
+            parent=self,
+        )
 
     def video_cut(self):
         """
@@ -201,7 +218,6 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
             InfoBar.error(
                 title=self.tr("error"),
                 content=self.tr("The video clip already exists!"),
-                orient=Qt.Horizontal,
                 isClosable=False,
                 position=InfoBarPosition.BOTTOM_LEFT,
                 duration=2000,
@@ -212,12 +228,13 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         start_time = start_time / 1000
         end_time = end_time / 1000
         try:
-            ffmpeg.input(filename, ss=start_time, to=end_time).output(output_file, c="copy").run()
+            ffmpeg.input(filename, ss=start_time, to=end_time).output(
+                output_file, c="copy"
+            ).run()
         except ffmpeg.Error as e:
             InfoBar.error(
                 title=self.tr("error"),
                 content=str(e),
-                orient=Qt.Horizontal,
                 isClosable=False,
                 position=InfoBarPosition.BOTTOM_LEFT,
                 duration=2000,
@@ -228,7 +245,6 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         InfoBar.success(
             title=self.tr("success"),
             content=self.tr("Video clip saved successfully!"),
-            orient=Qt.Horizontal,
             isClosable=False,
             position=InfoBarPosition.BOTTOM_RIGHT,
             duration=2000,
