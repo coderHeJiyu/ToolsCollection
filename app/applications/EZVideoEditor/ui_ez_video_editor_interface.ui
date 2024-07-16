@@ -84,10 +84,6 @@
        <property name="toolTip">
         <string>previous second</string>
        </property>
-       <property name="icon">
-        <iconset resource="../../resource/resource.qrc">
-         <normaloff>:/button/chevrons_left</normaloff>:/button/chevrons_left</iconset>
-       </property>
        <property name="iconSize">
         <size>
          <width>32</width>
@@ -103,10 +99,6 @@
       <widget class="ToolButton" name="button_previous_frame">
        <property name="toolTip">
         <string>previous frame</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../resource/resource.qrc">
-         <normaloff>:/button/chevron_left</normaloff>:/button/chevron_left</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -140,10 +132,6 @@
        <property name="toolTip">
         <string>next frame</string>
        </property>
-       <property name="icon">
-        <iconset resource="../../resource/resource.qrc">
-         <normaloff>:/button/chevron_right</normaloff>:/button/chevron_right</iconset>
-       </property>
        <property name="iconSize">
         <size>
          <width>32</width>
@@ -159,10 +147,6 @@
       <widget class="ToolButton" name="button_next_second">
        <property name="toolTip">
         <string>next second</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../resource/resource.qrc">
-         <normaloff>:/button/chevrons_right</normaloff>:/button/chevrons_right</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -402,9 +386,7 @@
    <header>video_slider.h</header>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="../../resource/resource.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>button_play</sender>

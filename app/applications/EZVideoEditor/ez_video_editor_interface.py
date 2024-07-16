@@ -1,10 +1,15 @@
 import os
+import sys
+from pathlib import Path
 from typing import Optional
 import ffmpeg
 from vlc import MediaPlayer
 from PyQt5.QtWidgets import QWidget, QFileDialog
 from PyQt5.QtCore import QTimer, QTime, QUrl
 from qfluentwidgets import FluentIcon, InfoBar, InfoBarPosition
+root_path = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_path))
+from app.common.more_icon import MoreIcon
 from ui_ez_video_editor_interface import Ui_EZVideoEditorInterface
 
 
@@ -46,6 +51,10 @@ class EZVideoEditorInterface(Ui_EZVideoEditorInterface, QWidget):
         self.button_set_start.setIcon(FluentIcon.STOP_WATCH)
         self.button_set_end.setIcon(FluentIcon.STOP_WATCH)
         self.button_cut.setIcon(FluentIcon.CUT)
+        self.button_next_second.setIcon(MoreIcon.CHEVRONS_RIGHT)
+        self.button_previous_second.setIcon(MoreIcon.CHEVRONS_LEFT)
+        self.button_next_frame.setIcon(MoreIcon.CHEVRON_RIGHT)
+        self.button_previous_frame.setIcon(MoreIcon.CHEVRON_LEFT)
         self.hyperlink_ffmpeg.setIcon(FluentIcon.LINK)
         self.hyperlink_vlc.setIcon(FluentIcon.LINK)
         # 视频信息

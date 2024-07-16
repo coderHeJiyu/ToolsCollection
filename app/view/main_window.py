@@ -1,6 +1,12 @@
 from qfluentwidgets import NavigationItemPosition, FluentIcon
 from app.view.main_window_base import MainWindowBase
-from app.view import DemoInterface, FileTreeInterface, SecretFileInterface, EZVideoEditorInterface
+from app.view import (
+    DemoInterface,
+    FileTreeInterface,
+    SecretFileInterface,
+    EZVideoEditorInterface,
+    HashlibInterface,
+)
 
 
 class MainWindow(MainWindowBase):
@@ -14,6 +20,7 @@ class MainWindow(MainWindowBase):
         )
         self.secret_file_interface = SecretFileInterface(self)
         self.ez_video_editor_interface = EZVideoEditorInterface(self)
+        self.hashlib_interface = HashlibInterface(self)
         self.__init_navigation()
         self.splash_screen.finish()
 
@@ -43,4 +50,9 @@ class MainWindow(MainWindowBase):
             self.ez_video_editor_interface.windowTitle(),
             pos,
         )
-
+        self.addSubInterface(
+            self.hashlib_interface,
+            FluentIcon.CODE,
+            self.hashlib_interface.windowTitle(),
+            pos,
+        )

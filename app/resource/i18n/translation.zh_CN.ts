@@ -12,112 +12,112 @@
 <context>
     <name>EZVideoEditorInterface</name>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="156"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="144"/>
         <source>EZ Video Editor</source>
         <translation>简洁视频编辑器</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="167"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="155"/>
         <source>00:00:00:000</source>
         <translation>00:00:00:000</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="159"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="147"/>
         <source>previous second</source>
         <translation>上一秒</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="160"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="148"/>
         <source>previous frame</source>
         <translation>上一帧</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="161"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="149"/>
         <source>play/pause</source>
         <translation>播放/暂停</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="162"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="150"/>
         <source>next frame</source>
         <translation>下一帧</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="163"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="151"/>
         <source>next second</source>
         <translation>下一秒</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="164"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="152"/>
         <source>record the start time</source>
         <translation>记录开始时间</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="166"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="154"/>
         <source>record the end time</source>
         <translation>记录结束时间</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="168"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="156"/>
         <source>save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="235"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="244"/>
         <source>error</source>
         <translation>出错了</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="158"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="167"/>
         <source>Drop a video file first!</source>
         <translation>请先拖放一个视频文件！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="218"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="227"/>
         <source>The video clip already exists!</source>
         <translation>该视频片段已存在！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="245"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="254"/>
         <source>success</source>
         <translation>已完成</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="245"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="254"/>
         <source>Video clip saved successfully!</source>
         <translation>视频片段已经成功保存！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="170"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="158"/>
         <source>vlc</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="171"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="159"/>
         <source>and</source>
         <translation>和</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="172"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="160"/>
         <source>ffmpeg</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="169"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="157"/>
         <source>Make sure</source>
         <translation>确保</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="173"/>
+        <location filename="../../applications/EZVideoEditor/ui_ez_video_editor_interface.py" line="161"/>
         <source>are installed.</source>
         <translation>已经安装。</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="178"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="187"/>
         <source>Start time set successfully!</source>
         <translation>成功设置开始时间！</translation>
     </message>
     <message>
-        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="196"/>
+        <location filename="../../applications/EZVideoEditor/ez_video_editor_interface.py" line="205"/>
         <source>End time set successfully!</source>
         <translation>成功设置结束时间！</translation>
     </message>
@@ -196,11 +196,97 @@
     </message>
 </context>
 <context>
+    <name>HashlibInterface</name>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="21"/>
+        <source>Text</source>
+        <translation>文本</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="22"/>
+        <source>File</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="27"/>
+        <source>New Tab</source>
+        <translation>新标签页</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/ui_hashlib_interface.py" line="112"/>
+        <source>Hashlib</source>
+        <translation>Hash工具</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/ui_hashlib_interface.py" line="113"/>
+        <source>Type:</source>
+        <translation>类型：</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/ui_hashlib_interface.py" line="114"/>
+        <source>Get hash</source>
+        <translation>获取Hash值</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="66"/>
+        <source>error</source>
+        <translation>出错了</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="66"/>
+        <source>File does not exist!</source>
+        <translation>文件不存在！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="77"/>
+        <source>Calculating hash...</source>
+        <translation>正在计算hash值...</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="77"/>
+        <source>Please wait patiently</source>
+        <translation>请耐心等待</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/hashlib_interface.py" line="91"/>
+        <source>finished!</source>
+        <translation>完成！</translation>
+    </message>
+</context>
+<context>
     <name>HomeInterface</name>
     <message>
         <location filename="../../view/home_interface.py" line="11"/>
         <source>Home</source>
         <translation>主页</translation>
+    </message>
+</context>
+<context>
+    <name>InputWidget</name>
+    <message>
+        <location filename="../../applications/Hashlib/ui_input_widget.py" line="71"/>
+        <source>Drop the file here</source>
+        <translation>将文件拖放到此处</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/input_widget.py" line="56"/>
+        <source>error</source>
+        <translation>出错了</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/input_widget.py" line="45"/>
+        <source>Please drag in a single file!</source>
+        <translation>请拽入单个文件！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/input_widget.py" line="56"/>
+        <source>Please drag in a file, not a folder!</source>
+        <translation>请拽入文件，而不是文件夹！</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/ui_input_widget.py" line="70"/>
+        <source>Enter the text here</source>
+        <translation>在此处输入文字</translation>
     </message>
 </context>
 <context>

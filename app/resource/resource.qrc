@@ -1,14 +1,20 @@
 <RCC>
-  <qresource prefix="/resource">
-    <file>images/logo.png</file>
-    <file>qss/dark/setting_interface.qss</file>
-    <file>qss/light/setting_interface.qss</file>
-    <file>i18n/translation.zh_CN.qm</file>
-  </qresource>
-  <qresource prefix="/button">
-    <file alias="chevron_left">images/chevron-left.svg</file>
-    <file alias="chevron_right">images/chevron-right.svg</file>
-    <file alias="chevrons_left">images/chevrons-left.svg</file>
-    <file alias="chevrons_right">images/chevrons-right.svg</file>
-  </qresource>
+    <qresource prefix="/resource">
+        <file>images/logo.png</file>
+        <file>qss/dark/setting_interface.qss</file>
+        <file>qss/light/setting_interface.qss</file>
+        <file>i18n/translation.zh_CN.qm</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>images/icons/File_black.svg</file>
+        <file>images/icons/File_white.svg</file>
+        <file>images/icons/ChevronLeft_black.svg</file>
+        <file>images/icons/ChevronLeft_white.svg</file>
+        <file>images/icons/ChevronRight_black.svg</file>
+        <file>images/icons/ChevronRight_white.svg</file>
+        <file>images/icons/ChevronsLeft_black.svg</file>
+        <file>images/icons/ChevronsLeft_white.svg</file>
+        <file>images/icons/ChevronsRight_black.svg</file>
+        <file>images/icons/ChevronsRight_white.svg</file>
+    </qresource>
 </RCC>
