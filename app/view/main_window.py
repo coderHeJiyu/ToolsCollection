@@ -6,6 +6,7 @@ from app.view import (
     SecretFileInterface,
     EZVideoEditorInterface,
     HashlibInterface,
+    WorkoutTimerInterface,
 )
 
 
@@ -21,6 +22,7 @@ class MainWindow(MainWindowBase):
         self.secret_file_interface = SecretFileInterface(self)
         self.ez_video_editor_interface = EZVideoEditorInterface(self)
         self.hashlib_interface = HashlibInterface(self)
+        self.workout_timer_interface = WorkoutTimerInterface(self)
         self.__init_navigation()
         self.splash_screen.finish()
 
@@ -54,5 +56,11 @@ class MainWindow(MainWindowBase):
             self.hashlib_interface,
             FluentIcon.CODE,
             self.hashlib_interface.windowTitle(),
+            pos,
+        )
+        self.addSubInterface(
+            self.workout_timer_interface,
+            FluentIcon.FLAG,
+            self.workout_timer_interface.windowTitle(),
             pos,
         )

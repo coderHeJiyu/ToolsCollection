@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkoutTimerInterface</class>
+ <widget class="QWidget" name="WorkoutTimerInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Workout Timer</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="LargeTitleLabel" name="LargeTitleLabel">
+           <property name="text">
+            <string>Schedule</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="CheckBox" name="checkBox_readonly">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>readonly</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stacked_widget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="ScheduleTableWidget" name="widget_schedule">
+             <property name="minimumSize">
+              <size>
+               <width>520</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustIgnored</enum>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::DoubleClicked</set>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <property name="verticalScrollMode">
+              <enum>QAbstractItemView::ScrollPerPixel</enum>
+             </property>
+             <property name="horizontalScrollMode">
+              <enum>QAbstractItemView::ScrollPerPixel</enum>
+             </property>
+             <property name="showGrid">
+              <bool>false</bool>
+             </property>
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+             <property name="rowCount">
+              <number>0</number>
+             </property>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>true</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Activity</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Time</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>operation</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="TableWidget" name="widget_schedule_readonly">
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <column>
+              <property name="text">
+               <string>Activity</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Time</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_buttons" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>164</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ToolButton" name="button_add_row">
+            <property name="toolTip">
+             <string>Add new event</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ToolButton" name="button_save">
+            <property name="toolTip">
+             <string>Save as json file</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ToolButton" name="button_load">
+            <property name="toolTip">
+             <string>Load from json file</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>100</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="LargeTitleLabel" name="label_event">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Event</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="TimerRing" name="timer_ring">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>20</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
+            </font>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+           <property name="format">
+            <string notr="true">00:00:00</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="ToolButton" name="button_timer">
+           <property name="toolTip">
+            <string>Play</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="ToolButton" name="button_reset">
+           <property name="toolTip">
+            <string>Reset</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LargeTitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TimerRing</class>
+   <extends>QProgressBar</extends>
+   <header>timer_ring.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ScheduleTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>schedule_table_widget.h</header>
+   <slots>
+    <slot>add_empty_row()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_add_row</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_schedule</receiver>
+   <slot>add_empty_row()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>584</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>523</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_timer</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutTimerInterface</receiver>
+   <slot>play()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>803</x>
+     <y>604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>878</x>
+     <y>631</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutTimerInterface</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>862</x>
+     <y>606</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1064</x>
+     <y>607</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_readonly</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>WorkoutTimerInterface</receiver>
+   <slot>set_readonly(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_save</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutTimerInterface</receiver>
+   <slot>save_as_json()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>598</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>632</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_load</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkoutTimerInterface</receiver>
+   <slot>load_from_json()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>609</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>633</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>play()</slot>
+  <slot>reset()</slot>
+  <slot>set_readonly(bool)</slot>
+  <slot>save_as_json()</slot>
+  <slot>load_from_json()</slot>
+ </slots>
+</ui>

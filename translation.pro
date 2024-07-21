@@ -18,5 +18,8 @@ SOURCES += app/view/main_window.py \
         app/applications/Hashlib/ui_hashlib_interface.py \
         app/applications/Hashlib/input_widget.py \
         app/applications/Hashlib/ui_input_widget.py \
+        app/applications/WorkoutTimer/workout_timer_interface.py \
+        app/applications/WorkoutTimer/ui_workout_timer_interface.py \
+        app/applications/WorkoutTimer/schedule_table_widget.py \
 
 TRANSLATIONS += app/resource/i18n/translation.zh_CN.ts \
