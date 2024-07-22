@@ -63,6 +63,7 @@ class Ui_InputWidget(object):
 
         self.retranslateUi(InputWidget)
         InputWidget.setCurrentIndex(0)
+        self.button_filepath.clicked.connect(InputWidget.open_file) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(InputWidget)
 
     def retranslateUi(self, InputWidget):

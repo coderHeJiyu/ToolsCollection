@@ -453,6 +453,9 @@
              <height>32</height>
             </size>
            </property>
+           <property name="shortcut">
+            <string notr="true">Space</string>
+           </property>
           </widget>
          </item>
          <item>

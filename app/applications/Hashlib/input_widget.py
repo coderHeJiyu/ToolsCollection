@@ -2,7 +2,7 @@ import os
 import sys
 from pathlib import Path
 from PyQt5.QtGui import QDragEnterEvent, QDropEvent
-from PyQt5.QtWidgets import QStackedWidget
+from PyQt5.QtWidgets import QStackedWidget, QFileDialog
 from qfluentwidgets import InfoBar
 root_path = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_path))
@@ -34,6 +34,16 @@ class InputWidget(Ui_InputWidget, QStackedWidget):
         if self.label_filepath.text() == "":
             self.label_filepath.setText(_tip)
         self.setCurrentIndex(data.get("page", 0))
+
+    def open_file(self):
+        _file, _ = QFileDialog.getOpenFileName(
+            self,
+            self.tr("Open file"),
+            "",
+            self.tr("All Files") + " (*)",
+        )
+        if os.path.isfile(_file):
+            self.label_filepath.setText(_file)
 
     def dragEnterEvent(self, a0: QDragEnterEvent):
         if self.currentIndex() == 0:

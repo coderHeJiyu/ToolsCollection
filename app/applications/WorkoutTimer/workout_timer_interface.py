@@ -1,5 +1,6 @@
 import os
 import json
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QTableWidgetItem, QWidget, QFileDialog
 from qfluentwidgets import FluentIcon, MessageBox, InfoBar
 from ui_workout_timer_interface import Ui_WorkoutTimerInterface
@@ -90,16 +91,23 @@ class WorkoutTimerInterface(Ui_WorkoutTimerInterface, QWidget):
 
     def __set_readonly_data(self):
         _data = self.widget_schedule.get_data()
-        self.widget_schedule_readonly.setRowCount(len(_data))
+        _widget = self.widget_schedule_readonly
+        _widget.setRowCount(len(_data))
         for _key, _value in _data.items():
-            self.widget_schedule_readonly.setItem(
-                _key, 0, QTableWidgetItem(_value["activity"])
-            )
-            self.widget_schedule_readonly.setItem(
-                _key, 1, QTableWidgetItem(secs2time(_value["time"]))
-            )
-        self.widget_schedule_readonly.resizeColumnsToContents()
-        self.widget_schedule_readonly.resizeRowsToContents()
+            _item = QTableWidgetItem(_value["activity"])
+            _item.setTextAlignment(Qt.AlignCenter)
+            _widget.setItem(_key, 0, _item)
+            _item = QTableWidgetItem(secs2time(_value["time"]))
+            _item.setTextAlignment(Qt.AlignCenter)
+            _widget.setItem(_key, 1, _item)
+        # 自动调整
+        _widget.resizeColumnsToContents()
+        _widget.resizeRowsToContents()
+        _proportion = _widget.columnWidth(0) / _widget.columnWidth(1)
+        _width = _widget.width() - _widget.verticalHeader().width()
+        # 等比缩放
+        _widget.setColumnWidth(0, _width / (_proportion + 1) * _proportion)
+        _widget.setColumnWidth(1, _width / (_proportion + 1))
 
     def set_readonly(self, readonly: bool):
         """

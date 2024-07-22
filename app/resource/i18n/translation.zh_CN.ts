@@ -264,29 +264,39 @@
 <context>
     <name>InputWidget</name>
     <message>
-        <location filename="../../applications/Hashlib/ui_input_widget.py" line="71"/>
+        <location filename="../../applications/Hashlib/ui_input_widget.py" line="72"/>
         <source>Drop the file here</source>
         <translation>将文件拖放到此处</translation>
     </message>
     <message>
-        <location filename="../../applications/Hashlib/input_widget.py" line="56"/>
+        <location filename="../../applications/Hashlib/input_widget.py" line="66"/>
         <source>error</source>
         <translation>出错了</translation>
     </message>
     <message>
-        <location filename="../../applications/Hashlib/input_widget.py" line="45"/>
+        <location filename="../../applications/Hashlib/input_widget.py" line="55"/>
         <source>Please drag in a single file!</source>
         <translation>请拽入单个文件！</translation>
     </message>
     <message>
-        <location filename="../../applications/Hashlib/input_widget.py" line="56"/>
+        <location filename="../../applications/Hashlib/input_widget.py" line="66"/>
         <source>Please drag in a file, not a folder!</source>
         <translation>请拽入文件，而不是文件夹！</translation>
     </message>
     <message>
-        <location filename="../../applications/Hashlib/ui_input_widget.py" line="70"/>
+        <location filename="../../applications/Hashlib/ui_input_widget.py" line="71"/>
         <source>Enter the text here</source>
         <translation>在此处输入文字</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/input_widget.py" line="39"/>
+        <source>Open file</source>
+        <translation>打开文件</translation>
+    </message>
+    <message>
+        <location filename="../../applications/Hashlib/input_widget.py" line="39"/>
+        <source>All Files</source>
+        <translation>所有文件</translation>
     </message>
 </context>
 <context>
@@ -305,22 +315,22 @@
 <context>
     <name>ScheduleTableWidget</name>
     <message>
-        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="22"/>
+        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="20"/>
         <source>Move up</source>
         <translation>上移</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="27"/>
+        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="25"/>
         <source>Move down</source>
         <translation>下移</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="32"/>
+        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="30"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="46"/>
+        <location filename="../../applications/WorkoutTimer/schedule_table_widget.py" line="44"/>
         <source>New Activity</source>
         <translation>新活动</translation>
     </message>
@@ -495,97 +505,97 @@
 <context>
     <name>WorkoutTimerInterface</name>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="55"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="56"/>
         <source>Finished!</source>
         <translation>完成！</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="55"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="56"/>
         <source>All events have been completed!</source>
         <translation>所有的事件已经完成！</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="69"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="70"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="69"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="70"/>
         <source>Please set the readonly mode first!</source>
         <translation>请先设置为只读模式！</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="78"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="79"/>
         <source>Are you sure?</source>
         <translation>你确定吗？</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="78"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="79"/>
         <source>The timer is running, do you want to skip the current event?</source>
         <translation>倒计时尚未结束，是否要跳过当前事件？</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="221"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="223"/>
         <source>Save as json file</source>
         <translation>保存为json文件</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="135"/>
+        <location filename="../../applications/WorkoutTimer/workout_timer_interface.py" line="143"/>
         <source>files</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="222"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="224"/>
         <source>Load from json file</source>
         <translation>从json文件中加载</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="207"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="209"/>
         <source>Workout Timer</source>
         <translation>健身计时器</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="208"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="210"/>
         <source>Schedule</source>
         <translation>计划表</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="209"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="211"/>
         <source>readonly</source>
         <translation>只读</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="217"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="219"/>
         <source>Activity</source>
         <translation>活动</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="219"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="221"/>
         <source>Time</source>
         <translation>时间</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="215"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="217"/>
         <source>operation</source>
         <translation>操作</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="220"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="222"/>
         <source>Add new event</source>
         <translation>添加新事件</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="223"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="225"/>
         <source>Event</source>
         <translation>事件</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="224"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="226"/>
         <source>Play</source>
         <translation>开始</translation>
     </message>
     <message>
-        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="225"/>
+        <location filename="../../applications/WorkoutTimer/ui_workout_timer_interface.py" line="227"/>
         <source>Reset</source>
         <translation>重置</translation>
     </message>

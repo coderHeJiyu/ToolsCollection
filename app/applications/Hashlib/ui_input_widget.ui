@@ -170,5 +170,25 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>button_filepath</sender>
+   <signal>clicked()</signal>
+   <receiver>InputWidget</receiver>
+   <slot>open_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open_file()</slot>
+ </slots>
 </ui>

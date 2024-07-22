@@ -181,6 +181,7 @@ class Ui_WorkoutTimerInterface(object):
         self.horizontalLayout_3.addItem(spacerItem7)
         self.button_timer = ToolButton(self.widget)
         self.button_timer.setIconSize(QtCore.QSize(32, 32))
+        self.button_timer.setShortcut("Space")
         self.button_timer.setObjectName("button_timer")
         self.horizontalLayout_3.addWidget(self.button_timer)
         self.button_reset = ToolButton(self.widget)
